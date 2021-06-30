@@ -23,6 +23,6 @@ use Illuminate\Support\Facades\Route;
     //Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
 
     // AdminPanel Show
-    Route::get('admin-panel' , [\App\Http\Controllers\AdminPanelController::class, 'Index'])->name('showadminPanel');
-    Route::get('admin-register' , [\App\Http\Controllers\AdminPanelController::class, 'registerPage'])->name('showregister');
-    Route::get('admin-login' , [\App\Http\Controllers\AdminPanelController::class, 'loginPage'])->name('showlogin');
+    Route::get('/admin-panel' , [\App\Http\Controllers\AdminPanelController::class, 'Index'])->name('showadminPanel');
+    Route::get('/admin-register' , [\App\Http\Controllers\AdminPanelController::class, 'registerPage'])->name('showregister');
+    Route::get('/admin-login' , [\App\Http\Controllers\AdminPanelController::class, 'loginPage'])->name('showlogin');
