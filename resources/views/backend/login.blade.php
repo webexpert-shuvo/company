@@ -16,7 +16,7 @@
                         <form action="{{ route('login') }}" method="POST" enctype="multipart/form-data">
                             @csrf
                             <div class="form-group">
-                                <input name="email"  class="form-control" type="text" placeholder="Email">
+                                <input name="logdata"  class="form-control" type="text" placeholder="Email">
                             </div>
                             <div class="form-group">
                                 <input name="password" class="form-control" type="text" placeholder="Password">

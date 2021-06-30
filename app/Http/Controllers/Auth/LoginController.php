@@ -40,6 +40,33 @@ class LoginController extends Controller
         $this->middleware('guest')->except('logout');
     }
 
+
+    /**
+     * Get the login username to be used by the controller.
+     *
+     * @return string
+     */
+    public function username()
+    {
+        $logdata = request()->input('logdata');
+        $phndata = substr($logdata ,0,4);
+
+        if (filter_var($logdata , FILTER_VALIDATE_EMAIL)) {
+            $type = 'email';
+        } elseif($phndata == '8801') {
+            $type = 'cell';
+        }else{
+            $type = 'uname';
+        }
+
+        request()->merge([$type =>$logdata ]);
+
+        return $type;
+    }
+
+
+
+
         /**
      * The user has logged out of the application.
      *
