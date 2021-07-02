@@ -14,7 +14,7 @@
                 </li>
 
                 <li>
-                    <a href="settings.html"><i class="fe fe-vector"></i> <span>Brand</span></a>
+                    <a href="{{ route('showbrand') }}"><i class="fe fe-vector"></i> <span>Brand</span></a>
                 </li>
                 <li class="submenu">
                     <a href="#"><i class="fe fe-document"></i> <span>Blog</span> <span class="menu-arrow"></span></a>

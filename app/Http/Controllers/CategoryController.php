@@ -99,6 +99,23 @@ class CategoryController extends Controller
     }
 
 
+    public function categoryShow()
+    {
+        return    Category::all();
+    }
+
+
+
+    public function categoryOne(Category $nam)
+    {
+        return $nam;
+    }
+
+
+
+
+
+
 
 
 }

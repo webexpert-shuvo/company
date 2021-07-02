@@ -12,4 +12,28 @@ class Category extends Model
     protected $guarded = [];
 
 
+    public function getNameAttribute($avalue)
+    {
+       return strtoupper($avalue);
+    }
+
+
+    public function setNameAttribute($value)
+    {
+        $this  -> attributes['name']  =  "shuvo" . $value;
+    }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 }
