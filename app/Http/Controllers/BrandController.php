@@ -15,7 +15,7 @@ class BrandController extends Controller
         $allBrand = Brand::latest()->get();
         return view('backend.layouts.brand.index',[
 
-            'alldata'       => $allBrand,
+            'alldata'      => $allBrand,
 
         ]);
     }
@@ -26,13 +26,9 @@ class BrandController extends Controller
     {
 
         $request -> validate([
-
             'name'      => 'required',
-
         ],[
-
             'name.required' => 'Please Type Brand Name Filed',
-
         ]);
 
 
@@ -55,22 +51,15 @@ class BrandController extends Controller
             ]);
         }
         return redirect()->back()->with('success' , 'Brand Insert Successfull');
-
     }
 
     //Brand Edit
     public function brandEdit(Request $request , $id)
     {
-
         $brandEditid = Brand::find($id);
-
         return view('backend.layouts.brand.edit' , [
-
             'branddata' => $brandEditid,
-
         ]);
-
-
     }
 
     //Brand Delete
@@ -80,9 +69,6 @@ class BrandController extends Controller
         $brand_delete -> delete();
         $brand_delete -> update();
         return redirect()->back()->with('success' , 'Brand Deleted Successfull');
-
-
-
 
     }
 

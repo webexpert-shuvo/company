@@ -66,6 +66,8 @@
 		<script src="{{ asset('backend/assets/plugins/raphael/raphael.min.js') }}"></script>
 		<script src="{{ asset('backend/assets/plugins/morris/morris.min.js') }}"></script>
 		<script src="{{ asset('backend/assets/js/chart.morris.js') }}"></script>
+        <script src="https://cdn.ckeditor.com/4.16.1/standard/ckeditor.js"></script>
+
 		<script src="{{ asset('backend/assets/js/custom.js') }}"></script>
 
 		<!-- Custom JS -->

@@ -37,8 +37,6 @@ use Illuminate\Support\Facades\Route;
     Route::get('/category-show' , [\App\Http\Controllers\CategoryController::class, 'categoryShow'])->name('cateShow');
     Route::get('/category-one/{nam:name}' , [\App\Http\Controllers\CategoryController::class, 'categoryOne'])->name('cateone');
 
-
-
     //Brand Route
     Route::get('/brands', [App\Http\Controllers\BrandController::class , 'Index'])->name('showbrand');
     Route::post('/brands-add', [App\Http\Controllers\BrandController::class , 'brandAdd'])->name('brand.store');
@@ -46,11 +44,24 @@ use Illuminate\Support\Facades\Route;
     Route::get('/brands-delete/{id}', [App\Http\Controllers\BrandController::class , 'brandDelete'])->name('brand.delete');
 
 
+    //Company Hero Slider Route
+
+    Route::get('/slider' , [App\Http\Controllers\HeroController::class , 'Index'])->name('show.hero');
+    Route::post('/slider-add' , [App\Http\Controllers\HeroController::class , 'sliderCreate'])->name('hero.create');
+    Route::get('/slider-edit/{id}' , [App\Http\Controllers\HeroController::class , 'heroEdit'])->name('hero.edit');
+    Route::get('/slider-delete/{id}' , [App\Http\Controllers\HeroController::class , 'heroDelete'])->name('hero.delete');
+    Route::post('/slider-update/{id}' , [App\Http\Controllers\HeroController::class , 'heroUpdate'])->name('hero.update');
+
+
+    //backend About Us Section
 
 
 
-    //Company Route
 
+
+
+    //FrontEnd Home  Page Route
+    Route::get('/home' , [App\Http\Controllers\HomaPageController::class, 'Index'])->name('show.homepage');
 
 
 

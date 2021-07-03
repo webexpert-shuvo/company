@@ -7,23 +7,6 @@ use Illuminate\Http\Request;
 
 class {{ class }} extends Controller
 {
-    /**
-    *    Index Method for curd
-    *
-    /
-
-    public function index(){
-
-        $data = Demo::latest()->get();
-        return view('view.name', [
-
-                'data'  => $data ,
-
-        ]);
-
-
-
-    }
 
 
 

@@ -8,6 +8,10 @@
            $('form#logout_form').submit();
         });
 
+        //Ck Editor
+        CKEDITOR.replace( 'aboutsection' );
+
+
 
 
 

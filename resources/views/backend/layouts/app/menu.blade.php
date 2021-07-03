@@ -16,6 +16,20 @@
                 <li>
                     <a href="{{ route('showbrand') }}"><i class="fe fe-vector"></i> <span>Brand</span></a>
                 </li>
+
+                <li>
+                    <a href="{{ route('show.hero') }}"><i class="fa fa-picture-o"></i> <span>Home Slider</span></a>
+                </li>
+
+                <li>
+                    <a href="{{ route('showbrand') }}"><i class="fe fe-vector"></i> <span>Home About</span></a>
+                </li>
+
+                <li>
+                    <a href="{{ route('showbrand') }}"><i class="fe fe-vector"></i> <span>Home Protfolio</span></a>
+                </li>
+
+
                 <li class="submenu">
                     <a href="#"><i class="fe fe-document"></i> <span>Blog</span> <span class="menu-arrow"></span></a>
                     <ul style="display: none;">
