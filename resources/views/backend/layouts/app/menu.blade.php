@@ -22,11 +22,11 @@
                 </li>
 
                 <li>
-                    <a href="{{ route('showbrand') }}"><i class="fe fe-vector"></i> <span>Home About</span></a>
+                    <a href="{{ route('show.aboutus') }}"><i class="fe fe-vector"></i> <span>Home About</span></a>
                 </li>
 
                 <li>
-                    <a href="{{ route('showbrand') }}"><i class="fe fe-vector"></i> <span>Home Protfolio</span></a>
+                    <a href="{{ route('show.services') }}"><i class="fe fe-vector"></i> <span>Home Services</span></a>
                 </li>
 
 

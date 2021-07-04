@@ -54,6 +54,19 @@ use Illuminate\Support\Facades\Route;
 
 
     //backend About Us Section
+    Route::get('/aboutus', [App\Http\Controllers\AboutusController::class , 'Index'])->name('show.aboutus');
+    Route::post('/aboutus-create', [App\Http\Controllers\AboutusController::class , 'aboutusCraete'])->name('aboutus.create');
+    Route::get('/aboutus-edit/{id}', [App\Http\Controllers\AboutusController::class , 'aboutusEdit'])->name('aboutus.edit');
+    Route::get('/aboutus-delete/{id}', [App\Http\Controllers\AboutusController::class , 'aboutusDelete'])->name('aboutus.delete');
+
+
+    //Backend Home Services
+    Route::get('/homeservices', [App\Http\Controllers\HomeServicesController::class , 'Index'])->name('show.services');
+    Route::get('/homeservices-create', [App\Http\Controllers\HomeServicesController::class , 'servicesCreate'])->name('services.create');
+    Route::post('/homeservices-create', [App\Http\Controllers\HomeServicesController::class , 'servicesStore'])->name('services.store');
+
+
+
 
 
 
