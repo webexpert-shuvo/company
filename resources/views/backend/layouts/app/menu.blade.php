@@ -28,6 +28,9 @@
                 <li>
                     <a href="{{ route('show.services') }}"><i class="fe fe-vector"></i> <span>Home Services</span></a>
                 </li>
+                <li>
+                    <a href="{{ route('show.gallery') }}"><i class="fe fe-vector"></i> <span>Home Gallery</span></a>
+                </li>
 
 
                 <li class="submenu">

@@ -66,7 +66,10 @@ use Illuminate\Support\Facades\Route;
     Route::post('/homeservices-create', [App\Http\Controllers\HomeServicesController::class , 'servicesStore'])->name('services.store');
 
 
-
+    //Gallery Route
+    Route::get('/allgallery' , [App\Http\Controllers\GalleryController::class , 'Index'])->name('show.gallery');
+    Route::get('/gallery-create' , [App\Http\Controllers\GalleryController::class , 'galleryCreate'])->name('gallery.create');
+    Route::post('/gallery-create' , [App\Http\Controllers\GalleryController::class , 'galleryStore'])->name('gallery.store');
 
 
 
